@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Koa Joy Hood</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <span class="logo-name">Koa Joy Hood</span>
+      <span class="logo-tagline">Hand-Painted Ceramics</span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-social">
+      <a href="mailto:hello@pixxboxx.au" aria-label="Email">✉</a>
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="Facebook">f</a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="portfolio-intro">
+      <h1>Portfolio</h1>
+      <p>Bowls, jugs and pitchers, hand-painted one at a time. Click any piece to page through the full collection.</p>
+    </section>
+
+    <section class="portfolio-grid" id="gallery">
+      <button class="portfolio-item" data-index="0"><img src="images/IMG_4205.jpeg" alt="Hand-painted ceramic piece by Koa Joy Hood"></button>
+      <button class="portfolio-item" data-index="1"><img src="images/IMG_4206.jpeg" alt="Hand-painted ceramic piece by Koa Joy Hood"></button>
+      <button class="portfolio-item" data-index="2"><img src="images/IMG_4208.jpeg" alt="Hand-painted ceramic piece by Koa Joy Hood"></button>
+      <button class="portfolio-item" data-index="3"><img src="images/IMG_4211.jpeg" alt="Hand-painted ceramic piece by Koa Joy Hood"></button>
+      <button class="portfolio-item" data-index="4"><img src="images/IMG_4225.jpeg" alt="Hand-painted ceramic piece by Koa Joy Hood"></button>
+      <button class="portfolio-item" data-index="5"><img src="images/IMG_4226.jpeg" alt="Hand-painted ceramic piece by Koa Joy Hood"></button>
+      <button class="portfolio-item" data-index="6"><img src="images/IMG_4227.jpeg" alt="Hand-painted ceramic piece by Koa Joy Hood"></button>
+      <button class="portfolio-item" data-index="7"><img src="images/IMG_4228.jpeg" alt="Hand-painted ceramic piece by Koa Joy Hood"></button>
+      <button class="portfolio-item" data-index="8"><img src="images/IMG_4229.jpeg" alt="Hand-painted ceramic piece by Koa Joy Hood"></button>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+    <img class="lightbox-image" id="lightbox-image" src="" alt="">
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+    <p class="lightbox-count" id="lightbox-count"></p>
+  </div>
+
+  <footer class="site-footer">
+    <nav class="footer-social">
+      <a href="mailto:hello@pixxboxx.au">hello@pixxboxx.au</a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </nav>
+    <p class="copyright">All images copyright Koa Joy Hood 2026</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
