@@ -89,7 +89,7 @@ img {
 }
 
 .main-nav a {
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -102,12 +102,12 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .header-social svg {
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.9rem;
+  height: 1.9rem;
   display: block;
 }
 
@@ -128,7 +128,7 @@ img {
   height: 80vh;
   min-height: 420px;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 0 calc(50% - 350px + 8rem);
   padding: 3rem 4rem;
   box-sizing: border-box;
   background: var(--clay-light);
@@ -147,7 +147,7 @@ img {
 
 .hero-copy {
   position: absolute;
-  left: 3rem;
+  left: 6.5rem;
   bottom: 3rem;
   max-width: 420px;
   color: var(--ink);
@@ -225,7 +225,7 @@ img {
 }
 
 .show-block {
-  text-align: left;
+  text-align: center;
   align-self: center;
   margin-top: 1.5rem;
   padding: 1.25rem 1.5rem;
@@ -394,8 +394,8 @@ img {
 }
 
 .footer-social svg {
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.9rem;
+  height: 1.9rem;
   display: block;
 }
 
