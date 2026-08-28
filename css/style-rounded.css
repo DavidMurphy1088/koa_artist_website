@@ -1,49 +1,54 @@
 /* Rounded-corners variant — softens the right-angle boxes from style.css.
-   Loaded after style.css so these overrides win. */
+   Loaded after style.css so these overrides win.
+   All rounded elements share the same 6px radius. */
 
 .hero-image-wrap {
-  border-radius: 18px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
 .hero-image {
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .hero-tagline {
   border-radius: 6px;
 }
 
+.show-block {
+  border-radius: 6px;
+}
+
 .about-image {
-  border-radius: 18px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
 .quote-image {
-  border-radius: 18px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
 .quote-image img {
-  border-radius: 18px;
+  border-radius: 6px;
 }
 
 .btn {
-  border-radius: 999px;
+  border-radius: 6px;
 }
 
 .newsletter-form input {
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .newsletter-form button {
-  border-radius: 999px;
+  border-radius: 6px;
 }
 
 .portfolio-item {
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .lightbox-image {
-  border-radius: 12px;
+  border-radius: 6px;
 }
