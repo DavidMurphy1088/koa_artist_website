@@ -15,7 +15,12 @@
   border-radius: 6px;
 }
 
-.show-block {
+.show-icon-box {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.show-icon-r1 {
   border-radius: 6px;
 }
 

@@ -2,6 +2,27 @@ document.querySelector('.menu-toggle')?.addEventListener('click', () => {
   document.querySelector('.main-nav').classList.toggle('open');
 });
 
+function initR1OpacitySlider() {
+  const r1OpacitySlider = document.getElementById('r1-opacity');
+  const r1 = document.querySelector('.show-icon-r1');
+  const r1OpacityValue = document.getElementById('r1-opacity-value');
+
+  if (r1OpacitySlider && r1) {
+    r1OpacitySlider.addEventListener('input', () => {
+      r1.style.opacity = r1OpacitySlider.value;
+      if (r1OpacityValue) {
+        r1OpacityValue.textContent = parseFloat(r1OpacitySlider.value).toFixed(2);
+      }
+    });
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initR1OpacitySlider);
+} else {
+  initR1OpacitySlider();
+}
+
 const gallery = document.getElementById('gallery');
 
 if (gallery) {
