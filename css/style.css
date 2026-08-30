@@ -211,6 +211,12 @@ img {
   object-fit: contain;
 }
 
+.copy-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .hero-copy {
   position: absolute;
   left: 6.5rem;
@@ -218,24 +224,18 @@ img {
   transform: translateY(-50%);
   max-width: 420px;
   color: var(--ink);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .hero-tagline {
   font-size: 1.4rem;
   font-weight: 300;
   margin-bottom: 1.25rem;
+  margin-left: -0.5rem;
   background: var(--cream);
   padding: 0.25rem 0.5rem;
   display: inline;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-}
-
-.hero-copy .btn {
-  align-self: center;
 }
 
 .btn {
@@ -268,8 +268,6 @@ img {
 }
 
 .about-copy {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 1rem;
   padding: 3rem;
@@ -307,11 +305,11 @@ img {
 
 .show-gallery {
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .show-address {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
