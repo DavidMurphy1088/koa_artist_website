@@ -58,16 +58,24 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 3rem;
+  padding: 0.75rem 3rem;
   background: var(--cream);
   border-bottom: 1px solid var(--line);
   flex-wrap: wrap;
 }
 
+/* v2: logo stamp on the left, name and taglines left-aligned beside it */
 .logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
   line-height: 1.2;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-name {
@@ -84,11 +92,11 @@ img {
 }
 
 .logo-icon {
-  width: 96px;
-  height: 96px;
+  width: 76px;
+  height: 76px;
   object-fit: contain;
   mix-blend-mode: multiply;
-  margin-top: 0.35rem;
+  flex-shrink: 0;
 }
 
 .main-nav {
@@ -804,7 +812,37 @@ img {
   }
 
   .site-header {
-    padding: 1.25rem 1.5rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  /* v2: phone menu, opened by the ☰ button (it had no style before, so it never appeared) */
+  .main-nav.open {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    order: 3;
+    padding: 1rem 0 0.5rem;
+  }
+
+  .logo-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo {
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 0.75rem;
+  }
+
+  .logo-name {
+    font-size: 0.95rem;
+  }
+
+  .logo-tagline {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
   }
 
   .hero {
