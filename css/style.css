@@ -717,6 +717,19 @@ img {
   font-weight: 300;
 }
 
+/* v2: address, "5 days only" and the days/times use the same size and weight
+   as the "Handcrafted decoupage art..." text (.hero-tagline: 1.4rem, 300) */
+.show-strip .show-address,
+.show-strip .show-note,
+.show-strip .show-schedule {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.show-strip .show-schedule {
+  gap: 0.1rem;
+}
+
 /* v2: artist name heading in the hero */
 .hero-title {
   padding-left: 0.5rem;
