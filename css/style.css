@@ -679,7 +679,7 @@ img {
 
 /* v2 (Oct 2026): exhibition poster beside the show details */
 .show-strip.with-poster {
-  grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 540px) minmax(0, 1fr);
   align-items: center;
   gap: 2rem;
   max-width: 1100px;
@@ -688,10 +688,20 @@ img {
   padding: 0 3rem;
 }
 
+/* Same beige containing box as the hero and quote images */
+.show-poster {
+  min-width: 0;
+  padding: 3rem 4rem;
+  box-sizing: border-box;
+  background: var(--clay-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .show-poster img {
   width: 100%;
   height: auto;
-  box-shadow: 0 6px 24px rgba(32, 29, 26, 0.15);
 }
 
 .show-note {
@@ -707,10 +717,6 @@ img {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 1rem;
-}
-
-.hero-copy .hero-tagline + .hero-tagline {
-  margin-top: -0.25rem;
 }
 
 /* v2: real artwork in the About the Artist strip */
@@ -755,7 +761,8 @@ img {
   }
 
   .show-poster {
-    max-width: 420px;
+    max-width: 480px;
+    padding: 1.5rem;
   }
 
   .show-strip.with-poster .show-block {
