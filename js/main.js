@@ -28,6 +28,7 @@ const gallery = document.getElementById('gallery');
 if (gallery) {
   const items = Array.from(gallery.querySelectorAll('.portfolio-item'));
   const images = items.map(item => item.querySelector('img').src);
+  const titles = items.map(item => item.dataset.title || '');
 
   const lightbox = document.getElementById('lightbox');
   const lightboxImage = document.getElementById('lightbox-image');
@@ -37,7 +38,9 @@ if (gallery) {
   function showImage(index) {
     currentIndex = (index + images.length) % images.length;
     lightboxImage.src = images[currentIndex];
-    lightboxCount.textContent = `${currentIndex + 1} / ${images.length}`;
+    const title = titles[currentIndex];
+    lightboxImage.alt = title;
+    lightboxCount.textContent = title ? `${title} · ${currentIndex + 1} / ${images.length}` : `${currentIndex + 1} / ${images.length}`;
   }
 
   function openLightbox(index) {
