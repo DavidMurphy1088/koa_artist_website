@@ -66,3 +66,12 @@
 .show-poster img {
   border-radius: 6px;
 }
+
+.about-portrait {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.about-portrait img {
+  border-radius: 6px;
+}
